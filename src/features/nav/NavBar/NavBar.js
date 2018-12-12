@@ -30,7 +30,8 @@ class NavBar extends Component {
                 <img src="/assets/logo.png" alt="logo" />
                 Re-vents
             </Menu.Item>
-            {authenticated && <Menu.Item as={NavLink} to='/events' name="Events" />}
+            <Menu.Item as={NavLink} to='/events' name="Events" />
+            <Menu.Item as={NavLink} to='/test' name="Test" />
             {authenticated && <Menu.Item as={NavLink} to='/people' name="Events" />}
             <Menu.Item>
                 <Button as={Link} to='createEvent' floated="right" positive inverted content="Create Event" />
